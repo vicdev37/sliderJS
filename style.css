@@ -1,0 +1,44 @@
+.infinity-slider__wrapper {
+    width: 700px;
+    height: 400px;
+    margin: 150px auto;
+    position: relative;
+    border: 1px solid black;
+}
+
+.infinity-slider {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.infinity-slider img {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+.infinity-slider .opacity0 {
+    opacity: 0;
+}
+
+.arrow-left, .arrow-right {
+    width: 36px;
+    height: 36px;
+    background: url("arrow-left.svg");
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    left: -40px;
+    top: 42%;
+    cursor: pointer;
+}
+
+.arrow-right {
+    background: url("arrow-right.svg");
+    background-size: contain;
+    left: 704px;
+}
